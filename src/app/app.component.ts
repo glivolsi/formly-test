@@ -15,6 +15,11 @@ export class AppComponent {
     {
       key: 'firstname',
       type: 'mycalendar',
+      templateOptions: {
+        readonlyInput: true,
+        //inline: true,
+        change: this.test,
+      },
     },
     {
       key: 'email',
@@ -29,5 +34,10 @@ export class AppComponent {
 
   onSubmit(model) {
     console.log(model);
+  }
+
+  test(a, b) {
+    console.log(a);
+    console.log(b);
   }
 }

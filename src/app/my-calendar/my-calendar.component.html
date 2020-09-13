@@ -1,1 +1,2 @@
-<p-calendar [formControl]="formControl" [formlyAttributes]="field"></p-calendar>
+<p-calendar [formControl]="formControl" [formlyAttributes]="field" [readonlyInput]="to.readonlyInput"
+  [inline]="to.inline" (onSelect)="to.change && to.change(field, $event)"></p-calendar>

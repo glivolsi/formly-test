@@ -6,4 +6,10 @@ import { FieldType } from '@ngx-formly/core';
   templateUrl: './my-calendar.component.html',
   styleUrls: ['./my-calendar.component.scss'],
 })
-export class MyCalendarComponent extends FieldType {}
+export class MyCalendarComponent extends FieldType {
+  defaultOptions = {
+    templateOptions: {
+      inline: false,
+    },
+  };
+}
