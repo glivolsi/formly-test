@@ -1,2 +1,3 @@
 <p-calendar [formControl]="formControl" [formlyAttributes]="field" [readonlyInput]="to.readonlyInput"
-  [inline]="to.inline" (onSelect)="to.change && to.change(field, $event)"></p-calendar>
+  [inline]="to.inline" (onSelect)="to.change && to.change(field, $event)"
+  (onMonthChange)="to.monthChange && to.monthChange(field, $event)"></p-calendar>
